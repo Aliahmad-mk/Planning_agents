@@ -537,7 +537,7 @@ def reducer(State: State) -> dict:
     word_count = len(final_md.split())
     
     # Save to file
-    filename = "research_paper5.md"
+    filename = "subgraphUsingLanGraph.md"
     output_path = Path(filename)
     output_path.write_text(final_md, encoding="utf-8")
     
@@ -581,7 +581,7 @@ workflow = graph.compile()
 # ==================== EXECUTION ====================
 
 result = workflow.invoke({
-    "topic": "Planning Agents",
+    "topic": "SubGraph in LanGraph",
     "Section": [],
     "all_sources": [],
     "errors": [],
